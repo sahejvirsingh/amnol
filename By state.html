@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Affordable and professional web design">
+	  <meta name="keywords" content="web design, affordable web design, professional web design">
+  	<meta name="author" content="Brad Traversy">
+    <title>Acme Web Deisgn | Services</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="img/favicon.png">
+    <style>
+        body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#1a1c1c;
+}
+/* Global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+ul{
+  margin:0;
+  padding:0;
+}
+.page-title{
+    color:#00ffff;
+}
+.button_1{
+  height:38px;
+  background:#00ffff;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#1a1c1c;
+}
+
+.dark{
+  padding:15px;
+  background:#e6e6e6;
+  color:#1a1c1c;
+  margin-top:10px;
+  margin-bottom:10px;
+  border-bottom:#00ffff 3px solid;  
+}
+
+/* Header **/
+header{
+  background:#1a1c1c;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#00ffff 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#00ffff;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+/* Showcase */
+#showcase{
+  min-height:400px;
+  background:url('../img/showcase.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align:center;
+  color:#ffffff;
+}
+
+#showcase h1{
+  margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+
+#showcase p{
+  font-size:20px;
+}
+
+/* Newsletter */
+#newsletter{
+  padding:15px;
+  color:#00ffff;
+  background:#1a1c1c;
+}
+
+#newsletter h1{
+  float:left;
+}
+
+#newsletter form {
+  float:right;
+  margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+/* Boxes */
+#boxes{
+  margin-top:20px;
+  background-color:white;
+  color: black;
+  
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+  
+}
+
+#boxes .box img{
+  width:90px;
+}
+
+/* Sidebar */
+aside#sidebar{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;
+}
+
+/* Main-col */
+article#main-col{
+  float:left;
+  width:65%;
+}
+
+/* Services */
+ul#services li{
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#1a1c1c;
+  background-color:#00ffff;
+  text-align: center;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #showcase h1{
+    margin-top:40px;
+  }
+
+  #newsletter button, .quote button{
+    display:block;
+    width:100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Human</span> Rights</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">C.O.E</a></li>
+            <li><a href="key.html">About</a></li>
+            <li><a href="services.html">Service</a></li>
+            <li><a href="Religious violence.html">R.V</a></li>
+            <li><a href="association.html">A.H.R</a></li>
+            <li><a href="News.html"></a>News</li>
+            <li><a href="Login.html">Login</a></li>
+            <li class="current"><a href="By state.html">B.S</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe To Our Newsletter</h1>
+        <form>
+          <input type="email" placeholder="Enter Email..." required>
+          <button type="submit" class="button_1">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="main">
+      <div class="container">
+        <article id="main-col">
+          <h1 class="page-title">By State</h1>
+          <ul id="services">
+            <li>
+              <h3>Assam</h3>
+              <p>A Human Rights Watch report notes that journalists and human rights activists have been arrested for falsely reporting on human rights abuses. Assam continues to be one of the forefront states where the claims of human rights abuses have been committed by India. Resultant secessionist and pro-independence movements have intensified the political situation, with widespread allegations of human rights abuses being committed by Indian security forces yet without any concrete proofs for allegations. Freedom House stated in their 2013 report on India that journalists in rural areas and regions coping with insurgencies – including Assam – are vulnerable and face pressure from both sides of the conflicts.</p>
+						  <p>@Wikipedia</p>
+            </li>
+            <li>
+              <h3>Punjab</h3>
+              <p>From 1984 to 1994, the state of Punjab in northern India was engaged in a power struggle between the militant secessionist Khalistan movement and Indian security forces.The Indian government responded to the escalating Punjab insurgency by launching Operation Blue Star in 1984, storming the Harmandir Sahib, or Golden Temple complex in Amritsar—the center of Sikh religious and spiritual life, where some militant groups had retreated. The Operation was controversial and resulted in death of hundreds of civilians, militants and soldiers. After this incident, Sikh bodyguards assassinated Prime Minister Indira Gandhi, further violence ensued.
+
+The aftermath of these events were felt for more than a decade.According to a Human Rights Watch report, state security forces adopted "increasingly brutal methods to stem the insurgency, including arbitrary arrests, torture, prolonged detention without trial, disappearances and summary killings of civilians and suspected militants". Militant organizations responded with increased violence aimed at civilians, state security forces, and Sikh political leaders deemed to be negotiating with the government.</p>
+						  <p>@wikipedia</p>
+            </li>
+            <li>
+              <h3>Jammu and Kashmir</h3>
+              <p>In 1989, a secessionist militant insurgency began in the northernmost erstwhile state of Jammu and Kashmir. Several international agencies, including the UN, have reported human rights violations in Jammu & Kashmir. In a press release the OHCHR spokesmen stated "The Office of the High Commissioner for Human Rights is concerned about the recent violent protests in Indian-administered Kashmir that have reportedly led to civilian casualties as well as restrictions to the right to freedom of assembly and expression." A 1996 Human Rights Watch (HRW) report accused the Indian military and Indian-government backed paramilitaries of "committ[ing] serious and widespread human rights violations in Kashmir".HRW has also accused Indian forces of "using rape as a means to punish and humiliate communities". There have been claims of extrajudicial killings, disappearances, and torture by the police and army in Kashmir by several human rights organisations, including Amnesty International and HRW.The Armed Forces Special Powers Act (AFSPA) which grants the military wide powers of arrest, the right to shoot to kill, and to occupy or destroy property in counterinsurgency operations was applied to Jammu and Kashmir in 1990, and has been applicable since. Indian officials claim that troops need such powers because the army is only deployed when national security is at serious risk from armed combatants. Such circumstances, they say, call for extraordinary measures. Human rights organisations have also asked Indian government to repeal the Public Safety Act, since "a detainee may be held in administrative detention for a maximum of two years without a court order."One 2008 report by Freedom House described Jammu and Kashmir as 'partly free'.</p>
+						  <p>@wikipedia</p>
+            </li>
+          </ul>
+        </article>
+
+      <!--  <aside id="sidebar">
+          <div class="dark">
+            <h3>Get A Quote</h3>
+            <form class="quote">
+  						<div>
+  							<label>Name</label><br>
+  							<input type="text" placeholder="Name">
+  						</div>
+  						<div>
+  							<label>Email</label><br>
+  							<input type="email" placeholder="Email Address">
+  						</div>
+  						<div>
+  							<label>Message</label><br>
+  							<textarea placeholder="Message"></textarea>
+  						</div>
+  						<button class="button_1" type="submit">Send</button>
+					</form>
+          </div>
+        </aside>
+      </div> -->
+    </section>
+
+    <footer>
+      <p>Human Rights welfare @copyright 2024</p>
+    </footer>
+  </body>
+</html>

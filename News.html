@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Affordable and professional web design">
+	  <meta name="keywords" content="web design, affordable web design, professional web design">
+  	<meta name="author" content="Brad Traversy">
+    <title>Acme Web Deisgn | Services</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="img/favicon.png">
+    <style>
+        body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#1a1c1c;
+}
+/* Global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+ul{
+  margin:0;
+  padding:0;
+}
+.page-title{
+    color:#00ffff;
+}
+.button_1{
+  height:38px;
+  background:#00ffff;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#1a1c1c;
+}
+
+.dark{
+  padding:15px;
+  background:#e6e6e6;
+  color:#1a1c1c;
+  margin-top:10px;
+  margin-bottom:10px;
+  border-bottom:#00ffff 3px solid;  
+}
+
+/* Header **/
+header{
+  background:#1a1c1c;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#00ffff 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#00ffff;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+/* Showcase */
+#showcase{
+  min-height:400px;
+  background:url('../img/showcase.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align:center;
+  color:#ffffff;
+}
+
+#showcase h1{
+  margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+
+#showcase p{
+  font-size:20px;
+}
+
+/* Newsletter */
+#newsletter{
+  padding:15px;
+  color:#00ffff;
+  background:#1a1c1c;
+}
+
+#newsletter h1{
+  float:left;
+}
+
+#newsletter form {
+  float:right;
+  margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+/* Boxes */
+#boxes{
+  margin-top:20px;
+  background-color:white;
+  color: black;
+  
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+  
+}
+
+#boxes .box img{
+  width:90px;
+}
+
+/* Sidebar */
+aside#sidebar{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;
+}
+
+/* Main-col */
+article#main-col{
+  float:left;
+  width:65%;
+}
+
+/* Services */
+ul#services li{
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#1a1c1c;
+  background-color:#00ffff;
+  text-align: center;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #showcase h1{
+    margin-top:40px;
+  }
+
+  #newsletter button, .quote button{
+    display:block;
+    width:100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+} 
+</style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Human</span> Rights</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">C.O.E</a></li>
+            <li><a href="key.html">ABOUT</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="Religious violence.html">R.V</a></li>
+            <li><a href="association.html">A.H.R</a></li>
+            <li><a href="Login.html">LOGIN</a></li>
+            <li class="current"><a href="News.html">NEWS</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe To Our Newsletter</h1>
+        <form>
+          <input type="email" placeholder="Enter Email..." required>
+          <button type="submit" class="button_1">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="main">
+      <div class="container">
+        <article id="main-col">
+          <h1 class="page-title">News</h1>
+          <ul id="services">
+            <li>
+                <img src="img2.jpg" alt="image" width="100%">
+              <h3>Dow’s failure to offer remedy for the Bhopal disaster has created a “sacrifice zone”</h3>
+              <p>The failure of the US-based chemical company Dow to provide remedy to victims of a deadly gas leak from a pesticide plant in India that resulted in the deaths of more than 22,000 people has created a “sacrifice zone” in which 500,000 more continue to suffer, Amnesty International said in a new report today ahead of the 40th anniversary of one of the world’s worst industrial disasters.
+</p>
+						  <p>@Wikipedia</p>
+            </li>
+            <li>
+                 <img src="img3.jpg" alt="image" width="100%">
+              <h3>India: Citizenship Amendment Act is a blow to Indian constitutional values and international standards</h3>
+              <p>The operationalization of the Citizenship Amendment Act (CAA) 2019 is a blow to the Indian constitutional values of equality and religious non-discrimination and inconsistent and incompatible with India’s international human rights obligations, said Amnesty International today.
+“The Citizenship Amendment Act is a bigoted law that legitimises discrimination on the basis of religion and should never have been enacted in the first place. Its operationalization is a poor reflection on the Indian authorities as they fail to listen to a multitude of voices critical of the CAA – from people across the country, civil society, international human rights organizations and the United Nations,” said Aakar Patel, chair of board at Amnesty International India.</p>
+						  <p></p>
+            </li>
+            <li>
+                 <img src="img4.jpg" alt="image" width="100%">
+              <h3>India: Right to peaceful protest under threat due to mounting restrictions and escalating crackdown on farmers’ march
+</h3>
+              <p>Responding to the mounting restrictions and escalating crackdown by the Indian authorities on the ‘Dilli Chalo’ peaceful march of farmers, Aakar Patel, chair of board at Amnesty International India, said:
+
+“Instead of facilitating the right to protest, the Indian government is yet again going to great lengths to quash the farmers’ peaceful protests in the country. The ‘Dilli Chalo’ march has been met with a crackdown by the authorities which runs counter to the government’s obligations not to restrict peaceful assemblies unnecessarily or disproportionately.</p>
+						  <p></p>
+            </li>
+             <li>
+                 <img src="img5.jpg" alt="image" width="100%">
+              <h3>New interactive digital space launched to highlight enforced disappearances in South Asia
+</h3>
+              <p>Amnesty International, along with over 20 partner organisations from South Asia, launches the first phase of an interactive digital space titled, “Footprints – Virtual Museum on Enforced Disappearances in South Asia,” today to highlight stories of those who have been subject to enforced disappearances in the region.
+
+“The new Virtual Museum on Enforced Disappearances in South Asia – Footprints – aims to document and enhance the understanding of the troubled pasts and volatile presents that many South Asian countries have. Enforced disappearances have left many families with unanswered questions and scarred for life. In some countries this heinous crime is still persistent while some state authorities have failed to deliver on promises of truth, justice and reparations to the victims and their families. The interactive digital space aims to showcase such stories of enforced disappearances from South Asia to enable a collective approach to hold governments accountable, challenge impunity and demand justice,” said Smriti Singh, Amnesty International’s Regional Director for South Asia.  
+
+</p>
+						  <p></p>
+            </li>
+             <li>
+                 <img src="img6.jpg" alt="image" width="100%">
+              <h3>India: Authorities must stop their discriminatory policy of punitively demolishing Muslim properties
+</h3>
+              <p>Responding to the reports of targeted demolition of Muslim-owned properties a day after incidents of communal violence instigated by participants of a Hindu Rally in India’s financial capital Mumbai, Aakar Patel, chair of Amnesty International India’s board, said:
+
+“It is alarming to note the impunity with which the Indian authorities have been enforcing their discriminatory de-facto policy of arbitrarily and punitively demolishing Muslim properties following episodes of communal violence. Such unlawful action against people suspected of violence, allegedly without notice or other due process requirements is a major blow to the rule of law. 
+
+</p>
+						  <p></p>
+            </li>
+          </ul>
+        </article>
+
+      <!--  <aside id="sidebar">
+          <div class="dark">
+            <h3>Get A Quote</h3>
+            <form class="quote">
+  						<div>
+  							<label>Name</label><br>
+  							<input type="text" placeholder="Name">
+  						</div>
+  						<div>
+  							<label>Email</label><br>
+  							<input type="email" placeholder="Email Address">
+  						</div>
+  						<div>
+  							<label>Message</label><br>
+  							<textarea placeholder="Message"></textarea>
+  						</div>
+  						<button class="button_1" type="submit">Send</button>
+					</form>
+          </div>
+        </aside>
+      </div> -->
+    </section>
+
+    <footer>
+      <p>Human Rights welfare @copyright 2024</p>
+    </footer>
+  </body>
+</html>
